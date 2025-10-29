@@ -1,16 +1,20 @@
-# football_on_the_hill
+# FOOTBALL ON THE HILL
 
 A new Flutter project.
 
-## Getting Started
+# Tugas 7
 
-This project is a starting point for a Flutter application.
+## Widget Tree pada Flutter
 
-A few resources to get you started if this is your first Flutter project:
+## Barisan Widget
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## MaterialApp
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Perbedaan antara StatelessWidget dan StatefulWidget
+
+## BuildContext
+
+## 'hot reload' & 'hot restart'
+
+
+
