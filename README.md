@@ -1,5 +1,5 @@
 # FOOTBALL ON THE HILL
-A new Flutter project.
+A new Flutter project for individual assignment PBP 25/26.
 
 # Tugas 7
 ## 𑁍 Widget Tree pada Flutter
@@ -56,6 +56,19 @@ Misal ingin widgetnya yang diam saja dan memiliki logika fungsi yang sangat sedi
 
 ○ 'hot reload', lajukan kode yang berubah ke VM dan re-build widget tree, sehingga state app bisa tersimpan.
 ○ 'hot restart', lajukan kode yang berubah ke VM dan restart Flutter app, sehingga state app hilang.
+
+# Tugas 8
+## Navigator.push() & Naviagtor.pushReplacement()
+
+*Kasus yang terbaik untuk aplikasi Football On The Hill*
+
+## Hierarchy Widget
+
+## Layout Widget
+
+*Contoh penggunaan pada aplikasi ini*
+
+## Warna Tema
 
 # ヽ(´ー｀)ﾉ
 ✧ Repositori ini dibuat oleh Farras Syafiq Ulumuddin dari kelas PBP-A 25/26. ✧

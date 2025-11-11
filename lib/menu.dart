@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:football_on_the_hill/widgets/left_drawer.dart';
+import 'package:football_on_the_hill/product_form.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
@@ -28,6 +30,8 @@ class MyHomePage extends StatelessWidget {
         //
         backgroundColor: Theme.of(context).colorScheme.primary,
       ),
+      //
+      drawer: LeftDrawer(),
       //
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -135,7 +139,16 @@ class ItemCard extends StatelessWidget {
                 content: Text("Kamu telah menekan tombol ${item.name}!"),
               ),
             );
+
+          // jika press card 'Create Product' muncul halaman product form.
+          if (item.name == "Create Product") {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ProductFormPage()),
+            );
+          }
         },
+
         //
         child: Container(
           padding: const EdgeInsets.all(8),
