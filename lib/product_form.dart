@@ -31,7 +31,7 @@ class _ProductFormPageState extends State<ProductFormPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Center(child: Text('Form Add Product')),
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.pink[200],
         foregroundColor: Colors.white,
       ),
 
@@ -66,7 +66,7 @@ class _ProductFormPageState extends State<ProductFormPage> {
                     if (value == null || value.isEmpty) {
                       return "Nama produk tidak boleh kosong!";
                     }
-                    if (value.length < 3 && value.length > 20) {
+                    if (value.length < 3 || value.length > 20) {
                       return "Nama harus diantara 3-20 karakter!";
                     }
                     return null;
@@ -156,7 +156,11 @@ class _ProductFormPageState extends State<ProductFormPage> {
                   },
                   validator: (String? value) {
                     if (value == null || value.isEmpty) {
-                      return "deskripsi produk tidak boleh kosong!";
+                      return "Deskripsi produk tidak boleh kosong!";
+                    }
+
+                    if (value.length > 500) {
+                      return "Deskripsi hanya bisa mencapai 500 karakter!";
                     }
                     return null;
                   },
@@ -206,6 +210,17 @@ class _ProductFormPageState extends State<ProductFormPage> {
                       _thumbnail = value!;
                     });
                   },
+
+                  validator: (String? value) {
+                    if (value == null) return null;
+
+                    final uri = Uri.tryParse(value);
+                    if (uri == null || !uri.isAbsolute) {
+                      return "Masukkan URL yang valid!";
+                    }
+
+                    return null;
+                  },
                 ),
               ),
 
@@ -230,7 +245,9 @@ class _ProductFormPageState extends State<ProductFormPage> {
                   padding: const EdgeInsets.all(8.0),
                   child: ElevatedButton(
                     style: ButtonStyle(
-                      backgroundColor: WidgetStateProperty.all(Colors.indigo),
+                      backgroundColor: WidgetStateProperty.all(
+                        Colors.pink[200],
+                      ),
                     ),
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {

@@ -13,10 +13,10 @@ class MyHomePage extends StatelessWidget {
     ItemHomepage(
       "All Products",
       Icons.sports_soccer_outlined,
-      Colors.lightBlueAccent,
+      Colors.pink.shade200,
     ),
-    ItemHomepage("My Products", Icons.ballot_outlined, Colors.greenAccent),
-    ItemHomepage("Create Product", Icons.add_box, Colors.redAccent),
+    ItemHomepage("My Products", Icons.ballot_outlined, Colors.pink.shade600),
+    ItemHomepage("Create Product", Icons.add_box, Colors.pink.shade800),
   ];
 
   @override
@@ -28,7 +28,7 @@ class MyHomePage extends StatelessWidget {
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         //
-        backgroundColor: Theme.of(context).colorScheme.primary,
+        backgroundColor: Colors.pink.shade200,
       ),
       //
       drawer: LeftDrawer(),
