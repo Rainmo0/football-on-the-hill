@@ -142,7 +142,7 @@ class ItemCard extends StatelessWidget {
 
           // jika press card 'Create Product' muncul halaman product form.
           if (item.name == "Create Product") {
-            Navigator.push(
+            Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => ProductFormPage()),
             );
