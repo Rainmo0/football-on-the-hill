@@ -35,7 +35,17 @@ Bisa dibilang parent widget hanyalah widget dimana child widget tergambar.
 
 ## ☁︎ MaterialApp
 
+MaterialApp adalah widget top-level yang mendirikan fitur-fitur pada aplikasi.
+MaterialApp menyediakan theme, navigation, dan locale setting sehingga mengikuti
+prinsip Material Design.
+
 *MaterialApp sebagai widget root*
+
+MaterialApp bisa dibilang sebagai kerangkanya widget-widget, maka bagaimana jika
+tidak ada MaterialApp? Aplikasi rasanya hancur, kehilangan banyak fitur penting.
+Maka penting MaterialApp untuk diimplementasikan. Selain itu ia juga:
+- titik awal visual dari seluruh sistem UI aplikasi
+- mengatur design, style, navigasi, dan ground behavior aplikasi
 
 ## ⌬ Perbedaan antara StatelessWidget dan StatefulWidget
 
@@ -74,8 +84,8 @@ Pada InfoCard, BuildContext digunakan untuk menentukan panjang widgetnya.
 
 ## ঌ 'hot reload' & 'hot restart'
 
-○ 'hot reload', lajukan kode yang berubah ke VM dan re-build widget tree, sehingga state app bisa tersimpan.
-○ 'hot restart', lajukan kode yang berubah ke VM dan restart Flutter app, sehingga state app hilang.
+- 'hot reload', lajukan kode yang berubah ke VM dan re-build widget tree, sehingga state app bisa tersimpan.
+- 'hot restart', lajukan kode yang berubah ke VM dan restart Flutter app, sehingga state app hilang.
 
 # Tugas 8
 ## Navigator.push() & Naviagtor.pushReplacement()
@@ -126,8 +136,9 @@ Pada ProductForm terdapat widget `SingleChildScrollView` dan `Padding` dan untuk
 Untuk ini kurang tahu cara mengimplementasikan warna yang cocok untuk permasalahan ini. Hanya saja aplikasi ini akan
 berdasarkan warna pink karena ada rasa *free will*.
 
-# Reference
-https://dev.to/alaminkarno/why-you-should-care-about-buildcontext-in-flutter-the-one-mistake-that-cost-me-hours-5fn3
+# ※ Reference ※
+- https://dev.to/alaminkarno/why-you-should-care-about-buildcontext-in-flutter-the-one-mistake-that-cost-me-hours-5fn3
+- https://medium.com/fludev/understanding-the-flutter-materialapp-widget-a-complete-guide-8247b0e68cb5
 
 # ヽ(´ー｀)ﾉ
 ✧ Repositori ini dibuat oleh Farras Syafiq Ulumuddin dari kelas PBP-A 25/26. ✧
