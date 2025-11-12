@@ -19,19 +19,19 @@ Bisa dibilang parent widget hanyalah widget dimana child widget tergambar.
 
 ## ✶ Barisan Widget
 
-○ MaterialApp; Menjadi pembungkus utama aplikasi Flutter yang menyediakan tema, routing, dan konfigurasi global.
-○ Scaffold; Menyediakan struktur dasar halaman seperti AppBar, body, dan floating action button.
-○ AppBar; Menampilkan bilah atas (top bar) dengan judul, ikon, dan aksi.
-○ Text; Menampilkan tulisan atau teks di layar.
-○ Padding; Memberikan jarak di sekitar widget anaknya.
-○ Row; Menyusun widget anak secara horizontal.
-○ Column; Menyusun widget anak secara vertikal.
-○ Card; Menampilkan wadah bergaya material dengan bayangan dan sudut membulat.
-○ Container; Widget serbaguna untuk mengatur ukuran, warna, margin, atau dekorasi.
-○ Snackbar; Menampilkan pesan singkat di bagian bawah layar sebagai notifikasi.
-○ InkWell; Memberikan efek sentuhan (ripple effect) pada area yang bisa ditekan.
-○ Material; Menyediakan permukaan bergaya Material Design untuk efek visual seperti bayangan dan tinta.
-○ GridView.count; Menyusun widget dalam tata letak grid berdasarkan jumlah kolom tertentu.
+- MaterialApp; Menjadi pembungkus utama aplikasi Flutter yang menyediakan tema, routing, dan konfigurasi global.
+- Scaffold; Menyediakan struktur dasar halaman seperti AppBar, body, dan floating action button.
+- AppBar; Menampilkan bilah atas (top bar) dengan judul, ikon, dan aksi.
+- Text; Menampilkan tulisan atau teks di layar.
+- Padding; Memberikan jarak di sekitar widget anaknya.
+- Row; Menyusun widget anak secara horizontal.
+- Column; Menyusun widget anak secara vertikal.
+- Card; Menampilkan wadah bergaya material dengan bayangan dan sudut membulat.
+- Container; Widget serbaguna untuk mengatur ukuran, warna, margin, atau dekorasi.
+- Snackbar; Menampilkan pesan singkat di bagian bawah layar sebagai notifikasi.
+- InkWell; Memberikan efek sentuhan (ripple effect) pada area yang bisa ditekan.
+- Material; Menyediakan permukaan bergaya Material Design untuk efek visual seperti bayangan dan tinta.
+- GridView.count; Menyusun widget dalam tata letak grid berdasarkan jumlah kolom tertentu.
 
 ## ☁︎ MaterialApp
 
@@ -39,8 +39,8 @@ Bisa dibilang parent widget hanyalah widget dimana child widget tergambar.
 
 ## ⌬ Perbedaan antara StatelessWidget dan StatefulWidget
 
-○ StatelessWidget, widget yang tidak memiliki state, menyebabkan mereka tidak bisa mengubah properti-properti diri sendiri melalui aksi internal atau behavior melainkan harus dari external events.
-○ StatefulWidget, widget yang memiliki state, dan mereka bisa mengubah properti diri sendiri secara dinamis. 
+- StatelessWidget, widget yang tidak memiliki state, menyebabkan mereka tidak bisa mengubah properti-properti diri sendiri melalui aksi internal atau behavior melainkan harus dari external events.
+- StatefulWidget, widget yang memiliki state, dan mereka bisa mengubah properti diri sendiri secara dinamis. 
 
 *Kapan memilih salah satunya*
 
@@ -91,7 +91,31 @@ dengan menggunakan `pushReplacement()`.
 
 ## Hierarchy Widget
 
+Scaffold sendiri menjadi fondasi tiap page sehingga untuk Tugas 8 ini
+menyediakan appBar, drawer, dan body.
+
+Kemudian ada AppBar yang menjadi identitas halaman. Contohnya dalam Tugas 8 ini
+terdapat 2 page yaitu halaman utama dan halaman product form. Ambil halaman Product Form.
+AppBar di product form sini digunakan sebagai judul dan menentukan warna pada background dan foreground.
+
+Habis itu ada drawer yang pembuatan widgetnya terpisah, berfungsi sebagai peta jalan aplikasi.
+Jadi drawer di Tugas 8 ini memberikan opsi untuk user mau pindah ke page yang mana dengan mudah.
+
+Pembuatan aplikasi yang terstruktur ini benefitnya yaitu
+- Navigasi lebih mudah
+- Kode lebih terstruktur
+
 ## Layout Widget
+
+Padding sendiri bisa merapihkan page form sehingga terasa rapih yang memudahkan untuk dibaca ataupun disentuh. 
+Fungsi sebenarnya yaitu memberi jarak antar elemen.
+
+SingleChildScrollView membuat page form bisa di-scroll.
+Untuk layar kecil seperti HP jika page form nya banyak yang harus diisi dan tidak mungkin untuk semuanya bisa ditampung dalam satu screen maka dengan widget ini memudahkan pengguna untuk mengisi form. 
+Fungsi sebenarnya yaitu bisa membuat form yang panjang.
+
+ListView agar page form terlihat efisien dan dinamis misal kalau ada elemen yang banyak untuk ditampilkan pada suatu page.
+Fungsi sebenarnya yaitu me-render elemen yang hanya terlihat di layar.
 
 *Contoh penggunaan pada aplikasi ini*
 
@@ -101,6 +125,9 @@ Pada ProductForm terdapat widget `SingleChildScrollView` dan `Padding` dan untuk
 
 Untuk ini kurang tahu cara mengimplementasikan warna yang cocok untuk permasalahan ini. Hanya saja aplikasi ini akan
 berdasarkan warna pink karena ada rasa *free will*.
+
+# Reference
+https://dev.to/alaminkarno/why-you-should-care-about-buildcontext-in-flutter-the-one-mistake-that-cost-me-hours-5fn3
 
 # ヽ(´ー｀)ﾉ
 ✧ Repositori ini dibuat oleh Farras Syafiq Ulumuddin dari kelas PBP-A 25/26. ✧
