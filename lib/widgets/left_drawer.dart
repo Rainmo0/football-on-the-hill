@@ -33,6 +33,16 @@ class LeftDrawer extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
+                Padding(padding: EdgeInsets.all(10)),
+                Text(
+                  'Mobile App of Web App Summit Asymptote. Think of it as his sister. Both are similar.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.white,
+                  ),
+                ),
               ],
             ),
           ),
