@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:football_on_the_hill/menu.dart';
 import 'package:football_on_the_hill/product_form.dart';
+import 'package:football_on_the_hill/product_entry_list.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -69,6 +70,21 @@ class LeftDrawer extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => ProductFormPage()),
+              );
+            },
+          ),
+
+          // halaman tampilan product
+          ListTile(
+            leading: const Icon(Icons.add_reaction_rounded),
+            title: const Text('Product List'),
+            onTap: () {
+              // Route to news list page
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ProductEntryListPage(),
+                ),
               );
             },
           ),

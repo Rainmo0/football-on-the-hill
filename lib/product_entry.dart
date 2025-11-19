@@ -36,7 +36,7 @@ class Fields {
   String name;
   int price;
   String description;
-  String? thumbnail;
+  String thumbnail;
   String category;
   bool isFeatured;
   int stock;
